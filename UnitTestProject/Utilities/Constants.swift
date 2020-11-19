@@ -9,5 +9,9 @@
 import Foundation
 
 struct Constants {
+    
     static let configUrl = "https://static.cloud.altbalaji.com/config/ios/v26/preprod-config.json"
+    static let demoEmail = "example@gmail.com"
+    static let demoPassword = "123"
+    
 }

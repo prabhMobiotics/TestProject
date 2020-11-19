@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController {
     
     private let viewModel: ConfigViewModel!
+    var coordinator: MainCoordinator?
     
     init(viewModel: ConfigViewModel) {
         self.viewModel = viewModel
@@ -31,6 +32,7 @@ class ViewController: UIViewController {
                 self?.view.backgroundColor = .systemPink
             }
         }
+        self.coordinator?.displayLoginScreen()
     }
     
 

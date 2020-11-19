@@ -21,6 +21,12 @@ class MainCoordinator: FlowCoordinator {
 
     func start() {
         let vc = ViewController(viewModel: appDIContainer.makeConfigViewModel())
+        vc.coordinator = self
+        navigationController.pushViewController(vc, animated: true)
+    }
+    
+    func displayLoginScreen() {
+        let vc = LogInViewController()
         navigationController.pushViewController(vc, animated: true)
     }
     
